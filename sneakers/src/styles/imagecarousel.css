@@ -1,0 +1,36 @@
+.image-carousel-container {
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+    .image-carousel-container {
+        display: block;
+        position: relative;
+        width: 100vw;
+    }
+
+    .image-display {
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .image-carousel-container button {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        background: var(--white);
+        border: none;
+        border-radius: 50%;
+        cursor: pointer;
+        height: 50px;
+        width: 50px;
+    }
+
+    .image-next {
+        right: 20px;
+    }
+
+    .image-previous {
+        left: 20px;
+    }
+}
