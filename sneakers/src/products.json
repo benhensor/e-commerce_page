@@ -1,19 +1,19 @@
 {
     "key": "1",
     "images": [
-        {"url": "images/image-product-1.jpg", "name": "Product 1"},
-        {"url": "images/image-product-2.jpg", "name": "Product 2"},
-        {"url": "images/image-product-3.jpg", "name": "Product 3"},
-        {"url": "images/image-product-4.jpg", "name": "Product 4"}
+        {"key": "0", "url": "images/image-product-1.jpg", "name": "Product 1"},
+        {"key": "1", "url": "images/image-product-2.jpg", "name": "Product 2"},
+        {"key": "2", "url": "images/image-product-3.jpg", "name": "Product 3"},
+        {"key": "3", "url": "images/image-product-4.jpg", "name": "Product 4"}
     ],
-    "thumbnail": [
-        {"url": "images/image-product-1-thumbnail.jpg", "name": "Product 1"},
-        {"url": "images/image-product-2-thumbnail.jpg", "name": "Product 2"},
-        {"url": "images/image-product-3-thumbnail.jpg", "name": "Product 3"},
-        {"url": "images/image-product-4-thumbnail.jpg", "name": "Product 4"}
+    "thumbnails": [
+        {"key": "0", "url": "images/image-product-1-thumbnail.jpg", "name": "Product 1"},
+        {"key": "1", "url": "images/image-product-2-thumbnail.jpg", "name": "Product 2"},
+        {"key": "2", "url": "images/image-product-3-thumbnail.jpg", "name": "Product 3"},
+        {"key": "3", "url": "images/image-product-4-thumbnail.jpg", "name": "Product 4"}
     ],
     "company": "Sneaker Company",
-    "name": "Fall Limited Edition Sneakers",
+    "title": "Fall Limited Edition Sneakers",
     "description": "These low-profile sneakers are your perfect casual wear companion. Featuring a durable rubber outer sole, they’ll withstand everything the weather can offer.",
     "price": "125.00",
     "discount": "50%",

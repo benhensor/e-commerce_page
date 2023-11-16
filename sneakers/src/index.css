@@ -6,6 +6,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    /* outline: 1px red solid; */
 }
 
 :root {
@@ -23,7 +24,7 @@
     --grayishBlue: hsl(220, 14%, 75%);
     --lightGrayishBlue: hsl(223, 64%, 98%);
     --white: hsl(0, 0%, 100%);
-    --black: hsl(0, 0%, 0%); /* (with 75% opacity for lightbox background) */
+    --black: hsla(0, 0%, 0%, 0.749); /* (with 75% opacity for lightbox background) */
 
 	/* Typography */
 
@@ -32,7 +33,7 @@
 	--fw-400: 400;
 	--fw-700: 700;
 
-    --fs-lg: 30px;
+    --fs-lg: 36px;
 	--fs-p: 16px;
     --fs-sm: 14px;
 

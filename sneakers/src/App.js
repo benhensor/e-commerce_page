@@ -1,39 +1,50 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import Header from './components/Header'
 import ProductPage from './components/ProductPage'
 import Footer from './components/Footer'
-import ProductInformation from './products.json'
+import fetchProductInformation from './api/fetchProductInformation'
 import { CountProvider } from './context/Count'
+import { CartProvider } from './context/Cart'
 import './styles/app.css'
 
 function App() {
 
-    const images = ProductInformation.images
-    const name = ProductInformation.name
-    const company = ProductInformation.company.toUpperCase()
-    const description = ProductInformation.description
-    const price = ProductInformation.price
-    const discount = ProductInformation.discount
-    const oldPrice = ProductInformation.oldprice
+    const [loading, setLoading] = useState(false)
+    const [product, setProduct] = useState(null)
+    const [error, setError] = useState(null)
 
     const count = 0
+    
+    useEffect(() => {
+        const fetchData = async () => {
+            try {
+                setLoading(true)
+                const data = await fetchProductInformation()
+                setProduct(data)
+            } catch (error) {
+                console.error("Failed to fetch product information:", error)
+                setError(error)
+            } finally {
+                setLoading(false)
+            }
+        }
+        fetchData()
+    }, [])
 
+    if (loading) return <p>Loading...</p>
+    if (error) return <p>Failed to load product information</p>
+
+    console.log('app', product)
 
     return (
         <main className="app">
-            <CountProvider>
-                <Header count={count}/>
-                <ProductPage 
-                    images={images}
-                    name={name}
-                    company={company}
-                    description={description}
-                    price={price}
-                    discount={discount}
-                    oldPrice={oldPrice}
-                />
-                <Footer />
-            </CountProvider>
+            <CartProvider>
+                <CountProvider>
+                    <Header count={count}/>
+                    <ProductPage product={product} />
+                    <Footer />
+                </CountProvider>
+            </CartProvider>
         </main>
        
     );

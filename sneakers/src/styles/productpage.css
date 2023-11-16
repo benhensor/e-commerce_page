@@ -1,96 +1,24 @@
 .product-container {
     display: flex;
-    flex-direction: column;
-    font-family: var(--ff-kumbh);
+    padding: 100px 10%;
+    gap: 100px;
 }
 
-.product-detail-container {
+/* .page-divider {
     display: flex;
-    flex-direction: column;
-    padding: 20px;
+    width: 100px;
+} */
+
+@media screen and (max-width: 1200px) {
+    .product-container {
+        gap: 20px;
+    }
 }
 
-.product-company {
-    font-weight: var(--fw-700);
-    font-size: var(--fs-sm);
-    color: var(--lightOrange);
-    letter-spacing: 0.1rem;
-}
-
-.product-detail {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-}
-
-.product-detail h1 {
-    font-weight: var(--fw-700);
-    font-size: var(--fs-lg);
-    color: var(--veryDarkBlue);
-}
-
-.product-detail-description {
-    color: var(--darkGrayishBlue);
-    line-height: 1.6rem;
-}
-
-.product-detail-price-container {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-}
-
-.product-detail-price {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.product-detail-price-new {
-    font-weight: var(--fw-700);
-    font-size: var(--fs-lg);
-    color: var(--veryDarkBlue);
-}
-
-.product-detail-price-discount {
-    font-weight: var(--fw-700);
-    font-size: var(--fs-p);
-    color: var(--lightOrange);
-    background-color: var(--paleOrange);
-    padding: 5px 10px;
-}
-
-.product-detail-price-old {
-    font-weight: var(--fw-400);
-    font-size: var(--fs-p);
-    color: var(--grayishBlue);
-    text-decoration: line-through;
-
-}
-
-.product-detail-quantity {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background-color: var(--lightGrayishBlue);
-    border-radius: 10px;
-    padding: 20px;
-}
-
-.product-detail-quantity button {
-    border: none;
-    background: none;
-    cursor: pointer;
-}
-
-.product-detail-add {
-    width: 100%;
-    padding: 20px 20px;
-    border-radius: 10px;
-    border: none;
-    background-color: var(--orange);
-    color: var(--white);
-    font-family: var(--ff-kumbh);
-    font-weight: var(--fw-700);
-    font-size: var(--fs-p);
+@media screen and (max-width: 768px) {
+    .product-container {
+        flex-direction: column;
+        padding: 0;
+        gap: 0;
+    }
 }

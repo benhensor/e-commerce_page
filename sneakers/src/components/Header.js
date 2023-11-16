@@ -1,5 +1,9 @@
 import React, { useState, useEffect, useContext } from 'react'
 import { CountContext } from '../context/Count'
+import { ReactComponent as Menu } from '../assets/icon-menu.svg'
+import { ReactComponent as Close } from '../assets/icon-close.svg'
+import { ReactComponent as Cart } from '../assets/icon-cart.svg'
+import { ReactComponent as Delete } from '../assets/icon-delete.svg'
 import '../styles/header.css'
 import '../styles/cartpreview.css'
 
@@ -33,7 +37,7 @@ export function Header() {
                     <p>$125.00 x 1</p>
                 </div>
                 <button className='cart-item-delete'>
-                    <img src="images/icon-delete.svg" alt="Delete" />
+                    <Delete className='icon-delete' />
                 </button>
             </div>
         )
@@ -44,7 +48,7 @@ export function Header() {
             <div className='header-container'>
                 <div className='header-logo-nav-container'>
                 <button className='header-menu-controls' onClick={() => setIsOpen(!isOpen)}>
-                    {!isOpen ? <img src="images/icon-menu.svg" alt="Hamburger Menu" /> : <img src="images/icon-close.svg" alt="Close Menu" />}
+                    {!isOpen ? <Menu className='icon-menu'/> : <Close className='icon-close'/>}
                 </button>
                 <img className='header-logo' src="images/logo.svg" alt="Sneakers logo" />
                 <nav className={`header-navbar ${isOpen ? 'visible' : ''}`}>  
@@ -65,7 +69,7 @@ export function Header() {
                 </div>
                 <div className='header-user'>
                     <button className='header-cart' onClick={() => setCartOpen(!cartOpen)}>
-                        <img src="images/icon-cart.svg" alt="Shopping Trolley" />
+                        <Cart className='icon-cart'/>
                         <p className='header-cart-quantity'>{cartQuanity}</p>
                     </button>
 
