@@ -138,6 +138,12 @@ hr {
     font-family: var(--ff-kumbh);
     font-weight: var(--fw-700);
     font-size: var(--fs-p);
+    transition: var(--transition);
+}
+
+.cart-checkout:hover {
+    background-color: var(--lightOrange);
+    cursor: pointer;
 }
 
 @media screen and (max-width: 768px) {

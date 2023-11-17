@@ -2,79 +2,79 @@
     {
         "id": 0,
         "images": [
-            {"key": "0", "url": "images/image-product-1.jpg", "name": "Product 1"},
-            {"key": "1", "url": "images/image-product-2.jpg", "name": "Product 2"},
-            {"key": "2", "url": "images/image-product-3.jpg", "name": "Product 3"},
-            {"key": "3", "url": "images/image-product-4.jpg", "name": "Product 4"}
+            {"key": "0", "url": "images/image-product1-1.jpg", "name": "Product 1"},
+            {"key": "1", "url": "images/image-product1-2.jpg", "name": "Product 1"},
+            {"key": "2", "url": "images/image-product1-3.jpg", "name": "Product 1"},
+            {"key": "3", "url": "images/image-product1-4.jpg", "name": "Product 1"}
         ],
         "thumbnails": [
-            {"key": "0", "url": "images/image-product-1-thumbnail.jpg", "name": "Product 1"},
-            {"key": "1", "url": "images/image-product-2-thumbnail.jpg", "name": "Product 2"},
-            {"key": "2", "url": "images/image-product-3-thumbnail.jpg", "name": "Product 3"},
-            {"key": "3", "url": "images/image-product-4-thumbnail.jpg", "name": "Product 4"}
+            {"key": "0", "url": "images/image-product1-1-thumbnail.jpg", "name": "Product 1"},
+            {"key": "1", "url": "images/image-product1-2-thumbnail.jpg", "name": "Product 1"},
+            {"key": "2", "url": "images/image-product1-3-thumbnail.jpg", "name": "Product 1"},
+            {"key": "3", "url": "images/image-product1-4-thumbnail.jpg", "name": "Product 1"}
         ],
         "company": "Sneaker Company",
         "title": "Spring Limited Edition Sneakers",
         "description": "These low-profile sneakers are your perfect casual wear companion. Featuring a durable rubber outer sole, they’ll withstand everything the weather can offer.",
-        "price": "125.00",
+        "price": "60.00",
         "discount": "50%",
-        "oldprice": "250.00"
+        "oldprice": "120.00"
     },
     {
         "id": 1,
         "images": [
-            {"key": "0", "url": "images/image-product-1.jpg", "name": "Product 1"},
-            {"key": "1", "url": "images/image-product-2.jpg", "name": "Product 2"},
-            {"key": "2", "url": "images/image-product-3.jpg", "name": "Product 3"},
-            {"key": "3", "url": "images/image-product-4.jpg", "name": "Product 4"}
+            {"key": "0", "url": "images/image-product2-1.jpg", "name": "Product 2"},
+            {"key": "1", "url": "images/image-product2-2.jpg", "name": "Product 2"},
+            {"key": "2", "url": "images/image-product2-3.jpg", "name": "Product 2"},
+            {"key": "3", "url": "images/image-product2-4.jpg", "name": "Product 2"}
         ],
         "thumbnails": [
-            {"key": "0", "url": "images/image-product-1-thumbnail.jpg", "name": "Product 1"},
-            {"key": "1", "url": "images/image-product-2-thumbnail.jpg", "name": "Product 2"},
-            {"key": "2", "url": "images/image-product-3-thumbnail.jpg", "name": "Product 3"},
-            {"key": "3", "url": "images/image-product-4-thumbnail.jpg", "name": "Product 4"}
+            {"key": "0", "url": "images/image-product2-1-thumbnail.jpg", "name": "Product 2"},
+            {"key": "1", "url": "images/image-product2-2-thumbnail.jpg", "name": "Product 2"},
+            {"key": "2", "url": "images/image-product2-3-thumbnail.jpg", "name": "Product 2"},
+            {"key": "3", "url": "images/image-product2-4-thumbnail.jpg", "name": "Product 2"}
         ],
         "company": "Trainer Company",
         "title": "Summer Special Edition Sneakers",
         "description": "These low-profile sneakers are your perfect casual wear companion. Featuring a durable rubber outer sole, they’ll withstand everything the weather can offer.",
-        "price": "108.50",
+        "price": "77.00",
         "discount": "30%",
-        "oldprice": "155.00"
+        "oldprice": "110.00"
     },
     {
         "id": 2,
         "images": [
-            {"key": "0", "url": "images/image-product-1.jpg", "name": "Product 1"},
-            {"key": "1", "url": "images/image-product-2.jpg", "name": "Product 2"},
-            {"key": "2", "url": "images/image-product-3.jpg", "name": "Product 3"},
-            {"key": "3", "url": "images/image-product-4.jpg", "name": "Product 4"}
+            {"key": "0", "url": "images/image-product3-1.jpg", "name": "Product 3"},
+            {"key": "1", "url": "images/image-product3-2.jpg", "name": "Product 3"},
+            {"key": "2", "url": "images/image-product3-3.jpg", "name": "Product 3"},
+            {"key": "3", "url": "images/image-product3-4.jpg", "name": "Product 3"}
         ],
         "thumbnails": [
-            {"key": "0", "url": "images/image-product-1-thumbnail.jpg", "name": "Product 1"},
-            {"key": "1", "url": "images/image-product-2-thumbnail.jpg", "name": "Product 2"},
-            {"key": "2", "url": "images/image-product-3-thumbnail.jpg", "name": "Product 3"},
-            {"key": "3", "url": "images/image-product-4-thumbnail.jpg", "name": "Product 4"}
+            {"key": "0", "url": "images/image-product3-1-thumbnail.jpg", "name": "Product 3"},
+            {"key": "1", "url": "images/image-product3-2-thumbnail.jpg", "name": "Product 3"},
+            {"key": "2", "url": "images/image-product3-3-thumbnail.jpg", "name": "Product 3"},
+            {"key": "3", "url": "images/image-product3-4-thumbnail.jpg", "name": "Product 3"}
         ],
         "company": "Shoe Company",
-        "title": "Fall Ultimate Edition Sneakers",
+        "title": "Autumn Ultimate Edition Sneakers",
         "description": "These low-profile sneakers are your perfect casual wear companion. Featuring a durable rubber outer sole, they’ll withstand everything the weather can offer.",
-        "price": "88.00",
+        "price": "76.00",
         "discount": "20%",
-        "oldprice": "110.00"
+        "oldprice": "95.00"
     },
     {
         "id": 3,
         "images": [
-            {"key": "0", "url": "images/image-product-1.jpg", "name": "Product 1"},
-            {"key": "1", "url": "images/image-product-2.jpg", "name": "Product 2"},
-            {"key": "2", "url": "images/image-product-3.jpg", "name": "Product 3"},
-            {"key": "3", "url": "images/image-product-4.jpg", "name": "Product 4"}
+            {"key": "0", "url": "images/image-product4-1.jpg", "name": "Product 4"},
+            {"key": "1", "url": "images/image-product4-2.jpg", "name": "Product 4"},
+            {"key": "2", "url": "images/image-product4-3.jpg", "name": "Product 4"},
+            {"key": "3", "url": "images/image-product4-4.jpg", "name": "Product 4"}
         ],
         "thumbnails": [
-            {"key": "0", "url": "images/image-product-1-thumbnail.jpg", "name": "Product 1"},
-            {"key": "1", "url": "images/image-product-2-thumbnail.jpg", "name": "Product 2"},
-            {"key": "2", "url": "images/image-product-3-thumbnail.jpg", "name": "Product 3"},
-            {"key": "3", "url": "images/image-product-4-thumbnail.jpg", "name": "Product 4"}
+            {"key": "0", "url": "images/image-product4-1-thumbnail.jpg", "name": "Product 4"},
+            {"key": "1", "url": "images/image-product4-2-thumbnail.jpg", "name": "Product 4"},
+            {"key": "2", "url": "images/image-product4-3-thumbnail.jpg", "name": "Product 4"},
+            {"key": "3", "url": "images/image-product4-4-thumbnail.jpg", "name": "Product 4"}
         ],
         "company": "Sandal Company",
         "title": "Winter Stupendous Edition Sneakers",
