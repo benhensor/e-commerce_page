@@ -1,17 +1,31 @@
-import React, { useState, useContext }from 'react'
+import React, { useState }from 'react'
 import ImageGallery from './ImageGallery'
 import ImagePopout from './ImagePopout'
 import ProductDetails from './ProductDetails'
 import UseMediaQuery from '../hooks/UseMediaQuery'
-import { CountContext } from '../context/Count'
-import '../styles/productpage.css'
+import { useCart } from '../context/Cart'
+import '../styles/productitem.css'
 
-const ProductItem = ({ images, thumbnails, title, company, description, price, discount, oldPrice }) => {
+const ProductItem = ({ id, images, thumbnails, title, company, description, price, discount, oldPrice }) => {
 
-    const {setCount} = useContext(CountContext)
+    const { addItemToCart } = useCart()
+    
     const [isPopout, setIsPopout] = useState(false)
     const [counter, setCounter] = useState(0)
     const [currentImageIndex, setCurrentImageIndex] = useState(0)
+
+    const product = {
+                        id: id,
+                        images: images,
+                        thumbnails: thumbnails,
+                        title: title,
+                        company: company,
+                        description: description,
+                        price: price,
+                        discount: discount,
+                        oldPrice: oldPrice,
+                        quantity: counter
+                    }
 
     const isDesktop = UseMediaQuery('(min-width: 769px)')
 
@@ -45,8 +59,8 @@ const ProductItem = ({ images, thumbnails, title, company, description, price, d
     }
 
     const handleAddClick = () => {
-        setCount(prevCount => prevCount + counter)
         setCounter(0)
+        addItemToCart(product, counter)
     }
 
     return (

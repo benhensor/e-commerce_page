@@ -1,13 +1,12 @@
-.product-container {
-    display: flex;
-    padding: 100px 10%;
-    gap: 100px;
+.product-item {
+    padding-bottom: 50px;
+    border-bottom: 1px solid var(--paleOrange);
 }
 
-/* .page-divider {
+.product-container {
     display: flex;
-    width: 100px;
-} */
+    gap: 100px;
+}
 
 @media screen and (max-width: 1200px) {
     .product-container {

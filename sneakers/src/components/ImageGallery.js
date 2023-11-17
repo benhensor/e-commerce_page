@@ -18,8 +18,8 @@ const ImageGallery = ({
         <div className='image-carousel-container'>
             <img className='image-display' src={currentImage.url} alt={currentImage.name} onClick={handleImageClick}/>
             <div className={`image-controls ${isDesktop ? 'hidden' : ''}`}>
-            <button className='image-previous' onClick={handlePrevious}><Previous className='icon-previous' /></button>
-            <button className='image-next' onClick={handleNext}><Next className='icon-previous' /></button>
+            <button className='image-previous' onClick={handlePrevious}><Previous /></button>
+            <button className='image-next' onClick={handleNext}><Next /></button>
             </div>
         <div className='image-thumbnails-container'>
             {thumbnails.map((thumbnail, index) => {

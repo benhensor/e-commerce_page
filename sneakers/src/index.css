@@ -34,10 +34,18 @@
 	--fw-700: 700;
 
     --fs-lg: 36px;
+    --fs-md: 24px;
 	--fs-p: 16px;
     --fs-sm: 14px;
 
     /* Transitions */
 
     --transition: all 0.3s ease;
+}
+
+body {
+    font-family: var(--ff-kumbh);
+    font-size: var(--fs-p);
+    color: var(--darkGrayishBlue);
+    background-color: var(--lightGrayishBlue);
 }

@@ -67,6 +67,11 @@
         left: 20px;
     }
 
+    .image-carousel-container svg {
+        fill: none;
+        stroke: #000;
+    }
+
     .image-display {
         border-radius: 0;
         margin-bottom: 0;

@@ -10,7 +10,7 @@ const ProductDetails = ({ handleDecreaseCount, handleIncreaseCount, handleAddCli
     return (
         <div className="product-detail-container">
             <div className="product-detail">
-                <p className="product-company">{company}</p>
+                <p className="product-company">{company.toUpperCase()}</p>
                 <h1>{title}</h1>
                 <p className="product-detail-description">{description}</p>
                 <div className="product-detail-price-container">

@@ -2,10 +2,13 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
     height: 100px;
-    margin: 0 5%;
-    border-bottom: 1px solid #E5E5E5;
-    position: relative;
+    background-color: var(--lightGrayishBlue);
+    z-index: 100;
 }
 
 .header-container {
@@ -14,7 +17,9 @@ header {
     justify-content: space-between;
     width: 100%;
     height: 100%;
-    padding: 0 10px;
+    padding: 0 5%;
+    border-bottom: 1px solid #E5E5E5;
+    position: relative;
 }
 
 .header-menu-controls {
@@ -111,7 +116,10 @@ header nav button.active {
 }
 
 .header-account {
+    display: flex;
+    align-items: center;
     width: 40px;
+    height: 40px;
     border-radius: 50%;
     border: 2px solid transparent;
     transition: var(--transition);
@@ -120,12 +128,6 @@ header nav button.active {
 .header-account:hover {
     border: 2px solid var(--orange);
 
-}
-
-.header-account {
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
 }
 
 .header-account img {
@@ -138,7 +140,11 @@ header nav button.active {
 @media screen and (max-width: 768px) {
     header {
         height: 70px;
-        margin: 0 10px;
+        
+    }
+    header.container {
+        width: 100%;
+        padding: 0 5%;
     }
 
     .header-menu-controls {
@@ -186,9 +192,5 @@ header nav button.active {
     .header-account {
         width: 30px;
         height: 30px;
-    }
-
-    .header-cart-preview {
-        width: 100%;
     }
 }
