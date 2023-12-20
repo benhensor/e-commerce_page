@@ -113,3 +113,31 @@
 .popout-next:hover svg {
     color: var(--orange);
 }
+
+@media screen and (max-width: 944px) {
+    .popout-image-container {
+        width: 100%;
+        padding: 0 20px;
+    }
+
+    .popout-close {
+        right: 30px;
+    }
+
+    .popout-previous {
+        left: 30px;
+    }
+    
+    .popout-next {
+        right: 30px;
+    }
+
+    .popout-thumbnails-container {
+        padding: 0;
+        width: 100%;
+    }
+    
+    .popout-thumbnail {
+        width: 20%;
+    }
+}

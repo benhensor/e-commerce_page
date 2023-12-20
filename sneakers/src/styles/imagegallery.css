@@ -42,6 +42,7 @@
 @media screen and (max-width: 768px) {
     .image-carousel-container {
         width: 100vw;
+        padding: 0 20px;
     }
 
     .image-carousel-container button {
